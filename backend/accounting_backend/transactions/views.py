@@ -1,9 +1,13 @@
+from django.http import HttpResponse
 from rest_framework import viewsets
 from rest_framework.decorators import api_view
 from django.http import HttpResponse
 import csv
 from .models import Transaction
 from .serializers import TransactionSerializer
+
+def home(request):
+    return HttpResponse("Bienvenue sur la page d'accueil de l'application de comptabilité.")
 
 # View pour gérer les transactions
 class TransactionViewSet(viewsets.ModelViewSet):
