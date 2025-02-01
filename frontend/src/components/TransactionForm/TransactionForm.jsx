@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { validateTransaction } from '../utils/validators';
+import { validateTransaction } from '../../utils/validators';
 import axios from 'axios';
 
 const TransactionForm = () => {
