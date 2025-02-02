@@ -50,7 +50,8 @@
 }
 .cta-banner:hover {
     cursor: pointer;
+    background-color: rgba(236, 237, 238, 0.85);
 }
 .cta-banner svg {
-    margin-left: 0.5rem;
+    margin-left: 0.8rem;
 }
