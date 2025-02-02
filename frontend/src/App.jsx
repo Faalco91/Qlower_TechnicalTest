@@ -4,11 +4,13 @@ import TransactionForm from './components/TransactionForm/TransactionForm';
 import TransactionList from './components/TransactionList/TransactionList';
 import GenerateBalanceButton from './components/GenerateBalanceButton/GenerateBalanceButton';
 import Home from './components/home/home';
+import Header from './components/header/header';
 
 const App = () => {
   return (
     <Router>
-        <Home />
+      <Header />
+      <Home />
     </Router>
   );
 };
