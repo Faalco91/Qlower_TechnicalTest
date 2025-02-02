@@ -1,15 +1,16 @@
 import React from "react";
 import TransactionForm from "../TransactionForm/TransactionForm";
 import TransactionList from "../TransactionList/TransactionList";
-import GenerateBalanceButton from "../GenerateBalanceButton/GenerateBalanceButton";
+import GetStarted from "../getStarted/getStarted";
+import "./home.css";
+
 const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
-      <TransactionList />
-      <TransactionForm />
-      <GenerateBalanceButton />
-    </div>
+    <section className="home-container">
+        <main className="home-content">
+            <GetStarted />
+        </main>
+    </section>
   );
 }
 
