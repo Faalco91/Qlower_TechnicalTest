@@ -14,9 +14,9 @@ const Header = () => {
           <div></div>
           <nav>
             <ul className='banner-menu'>
-              <li className='menu-item menu-item-li'> <TbSmartHome /> Home</li>
-              <li className='menu-item menu-item-li'> <BiMessageAlt /> About Us</li>
-              <li className='menu-item menu-item-li'> <PiPencilSimpleLine /> Blogs</li>
+              <li className='menu-item menu-item-li'> <TbSmartHome /> Accueil</li>
+              <li className='menu-item menu-item-li'> <BiMessageAlt /> À propos</li>
+              <li className='menu-item menu-item-li'> <PiPencilSimpleLine /> Blog</li>
               <li className='menu-item menu-item-li'> <TiMessages /> Contact</li>
             </ul>
           </nav>
