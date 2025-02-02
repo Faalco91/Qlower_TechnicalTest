@@ -45,7 +45,6 @@ source venv/bin/activate  # Linux/MacOS
 
 2. Installer les dépendances :
 ```bash
-cd backend
 pip install -r requirements.txt
 ```
 
