@@ -5,7 +5,7 @@ Ce projet est une application de gestion de transactions comptables permettant d
 ## Structure du Projet
 
 ```
-qlower-project/
+Qlower_TechnicalTest/
 ├── backend/             # API Django
 ├── frontend/             # Application React
 └── README.md
