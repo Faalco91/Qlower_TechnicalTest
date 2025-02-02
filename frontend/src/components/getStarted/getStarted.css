@@ -1,0 +1,30 @@
+.get-started-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(90vh - 64px);
+}
+
+.slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: .5rem 1rem .5rem .5rem;
+    width: 60%;
+}
+.slogan > p {
+    font-size: 1.125rem;
+    color: rgba(165, 164, 164, 0.77);
+    font-weight: 400;
+    margin-bottom: 2.8rem;
+}
+
+.slogan h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: -.05rem;
+    margin-bottom: 1rem;
+}
+.ctas-container {
+    display: flex;
+}
