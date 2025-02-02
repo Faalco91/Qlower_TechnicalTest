@@ -2,3 +2,62 @@
     color: black;
     background-color: white;
 }
+
+.close-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #e5e7eb;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+.close-button2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #e5e7eb;
+    padding: 0.8rem 0.875rem;
+    font-size: 0.875rem;
+    color: #F31260;
+}
+
+.close-button:hover {
+    border-radius: 3rem;
+    background-color:rgba(229, 231, 235, 0.09);
+}
+
+.close-button2:hover {
+    border-radius: 3rem;
+    background-color: rgba(243, 18, 97, 0.17);
+}
+
+.alert {
+    position: absolute;
+    background-color:rgba(82, 82, 82, 0.2) !important;
+    color: green !important;
+    margin-bottom: 0;   
+    top: 15px;
+    left: 20px;  
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+
+.alert-hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+

@@ -3,6 +3,11 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import Alert from '@mui/material/Alert';
+import AlertTitle from '@mui/material/AlertTitle';
+
+import { IoCloseOutline } from "react-icons/io5";
+
 import './modal.css';
 
 const style = {
@@ -19,10 +24,10 @@ const style = {
   borderRadius: '10px',
   border: '2px solid #2424248a;',
   boxShadow: 24,
-  padding: '50px 50px 80px 50px',
+  padding: '80px 50px 80px 50px',
 };
 
-export default function BasicModal({ title, children, buttonLabel, buttonStyle }) {
+export default function BasicModal({ title, children, buttonLabel, buttonStyle, success }) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -37,6 +42,14 @@ export default function BasicModal({ title, children, buttonLabel, buttonStyle }
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
+          {success && (
+            <Alert severity="success" className={`alert ${success ? '' : 'alert-hidden'}`}>
+              <AlertTitle>Succès</AlertTitle>
+              La transaction a bien été enregistrée !
+            </Alert>
+          )}
+          <button className="close-button" onClick={handleClose}><IoCloseOutline /></button> {/* Ajout du bouton de fermeture */}
+          <button className="close-button2" onClick={handleClose}>Fermer</button> {/* Ajout du bouton de fermeture */}
           <Typography id="modal-modal-title" className='modal-title' variant="h6" component="h2" sx={{ fontSize: '1.8rem', padding: '1rem', textAlign: 'center', fontWeight: '700' }} >
             {title}
           </Typography>
