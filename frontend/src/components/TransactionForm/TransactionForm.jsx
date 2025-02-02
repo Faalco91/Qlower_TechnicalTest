@@ -6,7 +6,7 @@ import GenerateBalanceButton from '../generateBalanceButton/GenerateBalanceButto
 import { LuCircleFadingArrowUp } from "react-icons/lu";
 
 
-const TransactionForm = () => {
+const TransactionForm = ({ setSuccess }) => {
   const [date, setDate] = useState('');
   const [categorie, setCategorie] = useState('');
   const [montant, setMontant] = useState('');
@@ -27,6 +27,8 @@ const TransactionForm = () => {
         montant,
       });
       console.log(response.data);
+      setSuccess(true); // Afficher l'alerte de succès
+      setTimeout(() => setSuccess(false), 3000); // Masquer l'alerte après 3 secondes
     } catch (error) {
       console.error('Error creating transaction', error);
     }
