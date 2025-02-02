@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { saveAs } from 'file-saver';
+import './GenerateBalanceButton.css';
+import { LuArrowDownToLine } from "react-icons/lu";
 
 const GenerateBalanceButton = () => {
   const [year, setYear] = useState('');
@@ -22,15 +24,21 @@ const GenerateBalanceButton = () => {
   };
 
   return (
-    <div>
-      <input
+    <div className='generate-balance-container'>
+      <label>Année</label>
+      <input 
         type="number"
         value={year}
         onChange={(e) => setYear(e.target.value)}
-        placeholder="Entrez l'année"
+        placeholder="2025"
+        className='form-content year'
       />
       {error && <p style={{ color: 'red' }}>{error}</p>}
-      <button onClick={handleGenerateBalance}>Générer la balance comptable</button>
+      
+      <div className='generate-balance-button-container'>
+        <button className='generate-balance-button' onClick={handleGenerateBalance}>Télécharger la balance comptable <LuArrowDownToLine /></button>
+      </div>
+      
     </div>
   );
 };
