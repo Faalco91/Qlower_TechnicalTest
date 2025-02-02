@@ -1,0 +1,50 @@
+.generate-balance-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 70px;
+}
+.generate-balance-container input {
+    margin-top: 0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #1e1e1e;
+    color: #fff;
+    background-color: #171616c2;
+}
+
+.generate-balance-container label {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.generate-balance-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.generate-balance-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 1rem;
+    padding: 12px 35px;
+    margin-top: 2rem;
+    font-size: 1rem;
+    border: 1px solid #1e1e1e;
+    color: black;
+    background-color: #ECEDEE;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.generate-balance-button:hover {
+    cursor: pointer;
+    background-color:rgba(236, 237, 238, 0.85);
+}
