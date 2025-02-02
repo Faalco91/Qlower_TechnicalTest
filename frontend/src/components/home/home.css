@@ -8,5 +8,7 @@
 .home-content {
     display: flex;
     flex-direction: column;
+    height: calc(100vh - -10rem);
+    justify-content: center;
     //margin: 0 auto;
 }
