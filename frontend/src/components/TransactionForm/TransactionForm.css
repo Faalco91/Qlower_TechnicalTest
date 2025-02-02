@@ -4,12 +4,14 @@
     justify-content: center;
     margin-top: 1.5rem;
 }
+
 .form-content label {
-    margin-bottom: 5px;
+    margin-bottom: .8rem;
     font-size: 1rem;
     font-weight: 500;
 }
 .form-content input {
+    height: 3rem;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #1e1e1e;
@@ -17,7 +19,9 @@
     background-color: #171616c2;
     width: 100%;
 }
+
 .form-content select {
+    height: 3rem;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #1e1e1e;

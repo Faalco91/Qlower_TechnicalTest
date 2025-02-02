@@ -5,6 +5,7 @@
   margin-top: 70px;
 }
 .generate-balance-container input {
+    height: 3rem;
     margin-top: 0;
     padding: 10px;
     border-radius: 5px;
@@ -15,7 +16,7 @@
 }
 
 .generate-balance-container label {
-    margin-bottom: 5px;
+    margin-bottom: .8rem;
     font-size: 1rem;
     font-weight: 500;
 }
