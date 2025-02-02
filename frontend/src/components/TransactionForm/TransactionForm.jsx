@@ -30,6 +30,13 @@ const TransactionForm = () => {
     } catch (error) {
       console.error('Error creating transaction', error);
     }
+
+    //Permet de réinitialiser les champs du formulaire après la soumission au clique sur le button submit
+    setDate('');
+    setCategorie('');
+    setMontant('');
+    setError('');
+
   };
 
   return (
