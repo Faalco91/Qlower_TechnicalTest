@@ -1,15 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import TransactionForm from './components/TransactionForm';
-import TransactionList from './components/TransactionList';
-import GenerateBalanceButton from './components/GenerateBalanceButton';
+import Home from './components/home/home';
+import Header from './components/header/header';
+import Footer from './components/footer/footer';
 
 const App = () => {
   return (
     <Router>
-        <TransactionList />
-        <TransactionForm />
-        <GenerateBalanceButton />
+      <Header />
+      <Home />
+      <Footer />
     </Router>
   );
 };

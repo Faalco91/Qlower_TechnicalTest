@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './TransactionList.css';
 
 const TransactionList = () => {
   const [transactions, setTransactions] = useState([]);
@@ -18,9 +19,8 @@ const TransactionList = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Transactions</h2>
-      <table>
+    <div className="transaction-list-container">
+      <table className="transaction-list-table">
         <thead>
           <tr>
             <th>Date</th>

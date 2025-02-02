@@ -1,0 +1,57 @@
+.banner-container {
+    display: flex;
+    justify-content: center;
+
+}
+.banner {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .237);
+    border: 0.125rem solid #3f3f46;
+    border-radius: 2.5rem;
+    margin: 2rem auto 0;
+    -webkit-backdrop-filter: blur(3.125rem);
+    backdrop-filter: blur(3.125rem);
+    padding: 0 2.5rem;
+    z-index: 100;
+    width: 60%;
+}
+.banner-menu {
+    display: flex;
+    margin: 0;
+}
+.banner-menu li {
+    font-size: .875rem;
+    padding: 1.5rem 1.25rem;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.menu-item-li {
+    transition: width 0.5s ease, transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.menu-item-li:hover {
+    cursor: pointer;
+    transform: scale(1.1) translateY(-0.125rem);
+}
+.cta-banner {
+    color: black;
+    padding: 0.75rem 1.563rem;
+    border-radius: 2rem;
+    background-color: #f1f1f1;
+}
+.cta-banner > a {
+    font-weight: 500;
+}
+.cta-banner:hover {
+    cursor: pointer;
+    background-color: rgba(236, 237, 238, 0.85);
+}
+.cta-banner svg {
+    margin-left: 0.8rem;
+}

@@ -1,0 +1,30 @@
+.transaction-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1.25rem;
+}
+
+.transaction-list-table {
+  width: 80%;
+  border-collapse: collapse;
+}
+
+.transaction-list-table th {
+  color: white;
+  font-weight: bold;
+}
+.transaction-list-table th,
+.transaction-list-table td {
+  padding: 0.625rem 0.625rem 1.25rem 0.625rem;
+  text-align: left;
+}
+
+.transaction-list-table tbody tr {
+  border-bottom: 0.063rem solid #3f3f46;
+}
+
+.transaction-list-table tbody tr:last-child {
+  border-bottom: none;
+}
