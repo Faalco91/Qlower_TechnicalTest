@@ -1,8 +1,8 @@
 .footer-separator {
   width: 60%;
   border: none;
-  border-top: 2px solid #3f3f46; /* Couleur de la barre horizontale */
-  margin: 0 auto 20px auto; /* Centrer et ajouter un espace en bas */
+  border-top: 0.125rem solid #3f3f46;
+  margin: 0 auto 1.25rem auto;
 }
 
 .footer-container {
@@ -21,21 +21,16 @@
 
 .footer-content p {
   margin: 0;
-  padding: 10px 0;
+  padding: 0.625rem 0;
 }
 
 .social-icons {
   display: flex;
-  gap: 15px;
-  margin-top: 10px;
+  gap: 0.9375rem;
+  margin-top: 0.625rem;
 }
 
 .social-icons a {
   color: #fff;
   font-size: 1.5rem;
-  transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: #007bff;
 }

@@ -8,8 +8,8 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0.625rem;
+    right: 0.625rem;
     background: none;
     border: none;
     cursor: pointer;
@@ -22,8 +22,8 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 10px;
-    right: 30px;
+    bottom: 0.625rem;
+    right: 1.875rem;
     background: none;
     border: none;
     cursor: pointer;
@@ -48,8 +48,8 @@
     background-color:rgba(82, 82, 82, 0.2) !important;
     color: green !important;
     margin-bottom: 0;   
-    top: 15px;
-    left: 20px;  
+    top: 0.938rem;
+    left: 1.25rem;  
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
